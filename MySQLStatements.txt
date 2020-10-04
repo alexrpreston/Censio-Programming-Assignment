@@ -1,0 +1,7 @@
+SELECT * FROM posts WHERE date_posted >= DATE_SUB(NOW(),INTERVAL 1 day)
+
+SELECT * FROM posts GROUP BY topic;
+
+SELECT * FROM posts WHERE is_anonymous IS TRUE ORDER BY date_posted ASC;
+
+SELECT * FROM posts WHERE INSTR(TITLE , 'Love') > 0;
